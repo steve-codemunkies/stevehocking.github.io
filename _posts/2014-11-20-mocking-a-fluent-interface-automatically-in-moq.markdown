@@ -6,7 +6,7 @@ categories: .net moq
 ---
 A brief post to show how to create an [extension method][dotnet-extension-method-definition] that quickly and simply mocks out the fluent methods of an interface.
 
-First though we need to define *what* a fluent interface is? Put simply a fluent interface (or api) is one that allows you to chain method calls. [This 2012 article by Eric Vogel][vs-mag-fluent-api] has a nice simple demonstration.
+First though we need to define *what* a fluent interface is: Put simply a fluent interface (or api) is one that allows you to chain method calls. [This 2012 article by Eric Vogel][vs-mag-fluent-api] has a nice simple demonstration.
 
 So let's imagine that we are going to use the two interfaces defined in that article in our code. The interfaces look like this:
 
@@ -27,7 +27,7 @@ So let's imagine that we are going to use the two interfaces defined in that art
     IFluentEmailSender Done();
 }</pre>
 
-And because we're good developers, we're going to do this with TDD, and write some tests. What you'll quickly find is that somewhere in your code you have code that looks similar to the following...
+We need to write some code to consume these interfaces, and because we're good developers, we're going to do this with TDD and write some tests. What you'll quickly find is that somewhere in your code you have code that looks similar to the following...
 
 <pre>[SetUp]
 public void SetUp()
@@ -46,7 +46,7 @@ public void SetUp()
     senderMock.Setup(s => s.CreateEmail()).Returns(messageMock.Object);
 }</pre>
 
-Not very nice, right? Well, it doesn't have to be like that!
+And this really isn't very nice, right? Well, it doesn't have to be like that!
 
 <noscript>
     <link rel="stylesheet" href="https://gist-assets.github.com/assets/embed-81292f31902b1c0ba82591f0046fa60c.css">
@@ -152,7 +152,7 @@ Not very nice, right? Well, it doesn't have to be like that!
 </noscript>
 <script src="https://gist.github.com/steve-codemunkies/38fb24eede7a3d0d52e8.js"></script>
 
-First to show you how it is used:
+First I'll show you how it is used:
 
 <pre>[SetUp]
 public void SetUp()
@@ -168,12 +168,12 @@ public void SetUp()
 Much nicer! So, what's happening?
 
 * Line 12 - We get a *MethodInfo* for the *IsAny* method on *It*. This will be used later on.
-* Line 13 - Create an expression for the generic type *T*.
+* Line 13 - Create an expression instance for the generic type *T*, this seems to be the left half of a lambda (*something => something...*).
 * Line 16 - Get all the methods on *T* that return *T*.
 * Lines 18-31 - Go through all the methods obtained at line 16.
 * Line 20 - Get the parameters for the method.
-* Line 21-22 - Go through the parameters and make the call to IsAny a closed generic on the type using the *MethodInfo* from line 12.
-* Line 27-30 - Programmatically create a Lambda for the method on the interface
+* Line 21-24 - Go through the parameters and make the call to *IsAny* a closed generic on the type parameter using the *MethodInfo* from line 12 (e.g. *It.IsAny<string>()*).
+* Line 27-30 - Programmatically create a Lambda for the method on the interface.
 
 The biggest trick I found in doing this was using an older version of [IlSpy][ilspy-download-page] to decompile a known set of tests that had lambdas defining expectations.
 
