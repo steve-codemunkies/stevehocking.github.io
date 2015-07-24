@@ -3,6 +3,7 @@ layout: 	post
 title:  	"Setting up an Ubuntu Server VM in Windows 8 Hyper-V"
 date:   	2014-07-13 21:00:00
 categories: windows-8 hyper-v ubuntu
+comments: true
 ---
 This is a brief tutorial on how to setup a virtual machine on Hyper-V in Windows 8 running Ubuntu Server; and then more importantly be able to communicate with it from within the host operating system.
 
@@ -12,7 +13,7 @@ Windows (host) setup
 --------------------
 
 1. Open Hyper-V Manager ( you'll be able to fins it easily enough using the search charm).
-2. In the right hand panel select Virtual Switch Manager... 
+2. In the right hand panel select Virtual Switch Manager...
 ![Virtual Switch Manager in Hyper-V Manager][hyperv-mgr-vsm]
 3. In the Virtual Switch Manager select New virtual network switch (1); then click on Internal (2); finally click on Create Virtual Switch (3)
 ![Virtual Switch Manager, creating new switch][virt-switch-create]
@@ -44,20 +45,20 @@ These instructions are based on the Internal Virtual Switch being connected to t
 3. Locate any existing section for the interface that connects to Internal Virtual Switch, and remove it. It will probably start with something similar to:
 
     <pre>auto eth0</pre>
-	
+
 4. Insert the following entries into the file:
 
     <pre>auto eth0
 iface eth0 inet static
         address 192.168.2.2
         netmask 255.255.255.0</pre>
-		
+
 	Of course this assumes that the interface is eth0 and the static address you have given the Internal Virtual Switch is 192.168.2.1.
-	
+
 5. Finally either reboot the vm, or reset the network interface that is connected to Internal Virtual Switch.
 
     The internal switch can be reset using the *ifdown/ifup* commands, the vm can be rebooted using the *reboot* command.
-	
+
 Assuming that you installed SSH as part of the guest OS setup you should now be able to ssh into the server using the IP address set in step four.
 
 [win-81-hyperv-ins]:	http://windows.microsoft.com/en-gb/windows-8/hyper-v-run-virtual-machines

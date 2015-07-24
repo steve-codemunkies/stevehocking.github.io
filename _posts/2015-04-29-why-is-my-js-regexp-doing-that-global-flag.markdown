@@ -3,6 +3,7 @@ layout: 	post
 title:  	"Why is my Javascript RegExp doing that?! The g flag..."
 date:   	2015-04-29 10:15:00
 categories: javascript regexp
+comments: true
 ---
 I recently picked up a defect in a [cordova][apache-cordova] application; searching through the locally stored records simply wasn't returning the expected results. My initial thought was that there was something slightly wonky with the data, or a hidden space; but no it was all very vanilla.
 

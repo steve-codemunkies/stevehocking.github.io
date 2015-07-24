@@ -9,7 +9,13 @@ layout: default
   </header>
 
   <article class="post-content">
-  {{ content }}
+    {{ content }}
   </article>
+
+  {% if page.comments %}
+  {% include disqus.html %}
+  {% else %}
+  <p><em>I'm really sorry, comments for this post have not been enabled.</em></p>
+  {% endif %}
 
 </div>

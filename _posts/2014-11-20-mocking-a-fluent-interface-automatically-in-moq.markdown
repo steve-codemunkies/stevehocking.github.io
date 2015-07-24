@@ -3,6 +3,7 @@ layout: 	post
 title:  	"Mocking a fluent interface 'automatically' in Moq"
 date:   	2014-11-20 21:00:00
 categories: .net moq
+comments: true
 ---
 A brief post to show how to create an [extension method][dotnet-extension-method-definition] that quickly and simply mocks out the fluent methods of an interface.
 
