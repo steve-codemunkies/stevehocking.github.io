@@ -18,13 +18,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-p a {
+p a, li a {
   border-bottom: 1px solid #ffeeaa;
   box-shadow: inset 0 -5px 0 #ffeeaa;
   transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 a { color: #aa0000; text-decoration: none; }
-p a:hover { background-color: #ffeeaa; text-decoration: none; }
+p a:hover, li a:hover { background-color: #ffeeaa; text-decoration: none; }
 a:hover   { color: #aa0000; text-decoration: underline; }
 a:visited { color: #aa0000; } */
 
