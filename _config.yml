@@ -6,6 +6,9 @@ baseurl: ""
 url: "http://yourdomain.com"
 github-username: steve-codemunkies
 twitter-username: codemunkies
+twitter-personal-username: SteveHocking
+stackoverflow-username: steve
+stackoverflow-userid: 747649
 
 # Build settings
 markdown: kramdown

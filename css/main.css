@@ -128,13 +128,9 @@ a:visited { color: #aa0000; } */
   color: #828282;
 }
 
-.github-icon-svg,
-.twitter-icon-svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  top: 3px;
+.site-footer .icon i {
+  font-size: 1.2em;
+  color: #C2C2C2;
 }
 
 
@@ -151,6 +147,10 @@ a:visited { color: #aa0000; } */
   margin-left: -220px;
 }
 
+.page-content .icon i {
+  font-size: 1.2em;
+  color: #C2C2C2;
+}
 
 /* Home styles */
 /* ----------------------------------------------------------*/
