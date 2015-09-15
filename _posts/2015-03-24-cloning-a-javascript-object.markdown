@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"'Cloning' an object in javascript"
+description: "Sometimes you need an exact copy of a javascript object, here is one way to do that."
 date:   	2015-03-24 15:45:00
 categories: javascript
 comments: true

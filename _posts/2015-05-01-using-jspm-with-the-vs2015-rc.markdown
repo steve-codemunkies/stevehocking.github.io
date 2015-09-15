@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"Using JSPM with the Visual Studio (VS) 2015 Release Candidate (rc)"
+description:  "Because sometimes it's good to use the stuff that isn't available by default."
 date:   	2015-05-01 08:30:00
 categories: javascript jspm vs2015 visualstudio
 comments: true

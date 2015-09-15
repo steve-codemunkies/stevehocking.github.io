@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"Why is my Javascript RegExp doing that?! The g flag..."
+description:  "Some people, when confronted with a problem, think 'I know, I'll use regular expressions'. Now they have two problems."
 date:   	2015-04-29 10:15:00
 categories: javascript regexp
 comments: true

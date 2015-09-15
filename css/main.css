@@ -186,6 +186,14 @@ a:visited { color: #aa0000; } */
   font-weight: 300;
 }
 
+.post-header h2 {
+  font-size: 21px;
+  letter-spacing: -1.75px;
+  line-height: 1;
+  font-weight: 100;
+  margin-top: 5px;
+}
+
 .post-header .meta {
   font-size: 15px;
   color: #818181;

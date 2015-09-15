@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"Setting up an Ubuntu Server VM in Windows 8 Hyper-V"
+description:  "Configuring Hyper-V, setting up the vm, installing Ubuntu Server, and finally configuring the server."
 date:   	2014-07-13 21:00:00
 categories: windows-8 hyper-v ubuntu
 comments: true

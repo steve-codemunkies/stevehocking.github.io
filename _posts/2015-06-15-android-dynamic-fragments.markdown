@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"Creating an Android app that uses dynamic fragments"
+description:  "When running before you've learned to walk, make sure to have as many scissors in your hands as possible."
 date:   	2015-06-15 16:00:00
 categories: android dynamic fragments
 comments: true

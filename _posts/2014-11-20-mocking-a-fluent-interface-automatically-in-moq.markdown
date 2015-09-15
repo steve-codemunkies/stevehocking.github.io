@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"Mocking a fluent interface 'automatically' in Moq"
+description:  "Fluent interfaces and objects can be useful and self documenting in certain situations, e.g. builders. However setting up a mock in a unit test can be very painful."
 date:   	2014-11-20 21:00:00
 categories: .net moq
 comments: true

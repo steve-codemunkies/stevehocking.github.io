@@ -1,6 +1,7 @@
 ---
 layout: 	post
 title:  	"Setting up aliases in bash"
+description: "Aliases, they make life so much simpler, use them!"
 date:   	2015-04-16 15:25:00
 categories: jekyll chocolatey linux bash
 comments: true

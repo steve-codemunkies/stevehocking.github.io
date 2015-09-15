@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: "About codemunkies"
+description:  "Information about codemunkies ltd and Steven Hocking"
 permalink: /about/
 ---
 
