@@ -1,3 +1,8 @@
+{% if page.permalink %}
+<meta property="og:url" content="{{ site.url }}{{ page.permalink }}" />
+{% else %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+{% endif %}
 <meta property="og:site_name" content="codemunkies ltd" />
 
 {% if page.title %}
