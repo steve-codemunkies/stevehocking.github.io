@@ -5,6 +5,10 @@
 {% endif %}
 <meta property="og:site_name" content="codemunkies ltd" />
 
+{% if page.page-type %}
+<meta property="og:type" content="{{ page.page-type }}" />
+{% endif %}
+
 {% if page.title %}
 <meta property="og:title" content="{{ page.title }}" />
 {% else %}

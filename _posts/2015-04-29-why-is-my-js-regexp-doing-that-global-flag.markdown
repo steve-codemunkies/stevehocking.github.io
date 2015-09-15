@@ -5,6 +5,7 @@ description:  "Some people, when confronted with a problem, think 'I know, I'll 
 date:   	2015-04-29 10:15:00
 categories: javascript regexp
 comments: true
+page-type: article
 ---
 I recently picked up a defect in a [cordova][apache-cordova] application; searching through the locally stored records simply wasn't returning the expected results. My initial thought was that there was something slightly wonky with the data, or a hidden space; but no it was all very vanilla.
 

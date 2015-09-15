@@ -3,6 +3,7 @@ layout: page
 title: "About codemunkies"
 description:  "Information about codemunkies ltd and Steven Hocking"
 permalink: /about/
+page-type: article
 ---
 
 Hello, I'm Steven Hocking and I'm a software engineer.

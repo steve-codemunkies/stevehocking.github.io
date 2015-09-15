@@ -5,6 +5,7 @@ description:  "When running before you've learned to walk, make sure to have as 
 date:   	2015-06-15 16:00:00
 categories: android dynamic fragments
 comments: true
+page-type: article
 ---
 
 For various reasons that are too complicated (and mostly forgotten) I recently ended up installing [Android Studio][android-studio-download]. The original reasons I did this have frittered away into the mists of time, however one of my experiments has stuck around.

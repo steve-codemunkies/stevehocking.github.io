@@ -5,6 +5,7 @@ description:  "Configuring Hyper-V, setting up the vm, installing Ubuntu Server,
 date:   	2014-07-13 21:00:00
 categories: windows-8 hyper-v ubuntu
 comments: true
+page-type: article
 ---
 This is a brief tutorial on how to setup a virtual machine on Hyper-V in Windows 8 running Ubuntu Server; and then more importantly be able to communicate with it from within the host operating system.
 
