@@ -13,4 +13,8 @@
 <meta name="twitter:description" content="codemunkies web site, blog updated by Steve Hocking - @SteveHocking" />
 {% endif %}
 
-<meta name="twitter:image" content="http://www.codemunki.es/cm.png" />
+{% if page.hero-image %}
+<meta property="twitter:image" content="{{ site.url }}{{ page.hero-image }}" />
+{% else %}
+<meta property="twitter:image" content="{{ site.url }}/cm.png" />
+{% endif %}

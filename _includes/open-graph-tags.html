@@ -21,4 +21,8 @@
 <meta property="og:description" content="codemunkies web site, blog updated by Steve Hocking - @SteveHocking" />
 {% endif %}
 
-<meta property="og:image" content="http://www.codemunki.es/cm.png" />
+{% if page.hero-image %}
+<meta property="og:image" content="{{ site.url }}{{ page.hero-image }}" />
+{% else %}
+<meta property="og:image" content="{{ site.url }}/cm.png" />
+{% endif %}
