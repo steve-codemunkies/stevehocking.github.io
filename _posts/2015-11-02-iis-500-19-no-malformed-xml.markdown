@@ -2,7 +2,7 @@
 layout: 	post
 title:  	"Why am I getting a 500.19 from IIS when my xml isn't malformed?"
 description:  "What? These URLRewrite rules?"
-date:   	2015-09-23 12:30:00
+date:   	2015-11-02 15:30:00
 categories: android pwdgnr8r preferences app
 comments: true
 page-type: article
