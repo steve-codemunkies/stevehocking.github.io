@@ -258,6 +258,8 @@ a:visited { color: #aa0000; } */
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content img { max-width: 800px; }
+
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
