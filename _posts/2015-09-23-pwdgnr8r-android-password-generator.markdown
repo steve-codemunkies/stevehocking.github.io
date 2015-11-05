@@ -43,7 +43,7 @@ and getting them up on screen
 
 was pretty straightforward. Unfortunately there were a couple of problems: the length allowed anything; and the summary for the length was not working correctly.
 
-<img src="/assets/2015-09-23-ip-text number.png" alt="Initial preferences screen" style="width: 400px;" />
+<img src="/assets/2015-09-23-ip-text-number.png" alt="Initial preferences screen" style="width: 400px;" />
 
 Going through the tutorial led me to [building a custom preference](http://developer.android.com/guide/topics/ui/settings.html#Custom), which is fine, though work that I felt sure that someone else had already done. Some judicious searching revealed that [Niklas Baudy](https://github.com/vanniktech) [was way ahead of me](https://github.com/vanniktech/VNTNumberPickerPreference). Integrating the *VNTNumberPickerPreference* in to my project really was as straightforward as [README.md](https://github.com/vanniktech/VNTNumberPickerPreference/blob/master/README.md) suggests:
 
