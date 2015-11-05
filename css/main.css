@@ -362,6 +362,9 @@ li img {
 /* media queries */
 /* ----------------------------------------------------------*/
 
+@media screen and (max-width: 824px) {
+  .post-content img { max-width: 100%; }
+}
 
 @media screen and (max-width: 750px) {
 
