@@ -28,6 +28,6 @@ And this is possibly true if you're looking after a very small database that nev
   * **_Change log_ description** (optional) &mdash; some information about the change; the source ticket, etc. Though where I have seen this it is rapidly left blank.
   * **Application date** &mdash; the date and time the change log was applied.  
   And of course this information has to get into the database somehow, and usually it is as part of the _change log_ itself.
-* **The _change log_ it self must be [atomic](<https://en.wikipedia.org/wiki/Atomicity_(database_systems)>)**. 
+* **The _change log_ it self must be [atomic](<https://en.wikipedia.org/wiki/Atomicity_(database_systems)>)**. If a part of the _change log_ fails then the changes must be rolled back, the database cannot be left in an inconsistent state. Importantly no more _change logs_ can be applied to the database until the problem has been investigated and rectified.
 
 Once you start thinking these requirements through it becomes obvious that having a tool of some kind to manage the application of change logs then it will be easier for you and everyone associated with the system. There are [tools available](https://www.google.co.uk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=database%20change%20log%20tool) though there are pitfalls as well, but mostly I've seen teams evolve their own over time as the burden of managing change logs manually becomes too much.
