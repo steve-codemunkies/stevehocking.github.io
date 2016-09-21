@@ -6,9 +6,9 @@ permalink: /about/
 page-type: article
 ---
 
-Hello, I'm Steven Hocking and I'm a software engineer.
+Hello, I'm Steven Hocking and I'm a technical architect and software engineer.
 
-I have been developing software professionally since 1998, and even earlier as a hobby and through school, college and university. You can find out more about me in these locations:
+I have been architecting and developing software professionally since 1998, and even earlier as a hobby and through school, college and university. You can find out more about me in these locations:
 
 <ul>
   <li>
@@ -48,6 +48,7 @@ I have been developing software professionally since 1998, and even earlier as a
 Recently I have been working with these technologies:
 
 *	Microsoft .NET Framework
+    * [.NET Core](https://www.microsoft.com/net/core/platform) and [ASP.NET Core MVC](http://www.asp.net/core)
     * [Asp.Net MVC](http://www.asp.net/mvc) (specifically versions 3 and 4)
     * [AutoFac](http://autofac.org/)
     * [Castle Windsor](http://www.castleproject.org/projects/windsor/)
@@ -56,7 +57,9 @@ Recently I have been working with these technologies:
     * [nHibernate](http://nhibernate.info/)
     * [Ninject](http://www.ninject.org/)
     * [NUnit](http://www.nunit.org/)
+    * [Quartz.NET](http://www.quartz-scheduler.net/)
     * [Rhino Mocks](http://www.hibernatingrhinos.com/oss/rhino-mocks)
+    * [SignalR](http://www.asp.net/signalr)
     * [TopShelf](http://topshelf-project.com/)
     * [Windows Communication Foundation (WCF)](https://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx)
     * [Windows Forms](https://msdn.microsoft.com/en-us/library/dd30h2yb(v=vs.110).aspx)
@@ -66,6 +69,10 @@ Recently I have been working with these technologies:
 * Microsoft Message Queue (MSMQ)
 * [RabbitMQ](https://www.rabbitmq.com/)
 *	Javascript
+    * [Angular (v1)](https://angularjs.org/)
+        * [Angular Bootstrap](https://angular-ui.github.io/bootstrap/)
+        * [Angular UI Router](https://ui-router.github.io/)
+        * [ngStorage](https://github.com/gsklee/ngStorage)
     * [Durandal](http://durandaljs.com/)
     * [Jasmine](http://jasmine.github.io/)
     * [jQuery](https://jquery.com/)
@@ -73,6 +80,9 @@ Recently I have been working with these technologies:
     * [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/)
     * [Postal.js](https://github.com/postaljs)
     * [Require.js](http://requirejs.org/)
+* [Jenkins CI](https://jenkins.io/)
+* [Octopus Deploy](https://octopus.com/)
+* [Microsoft Powershell](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx)
 
 You can also download a copy of my [CV](/assets/2015-09-14-cv.pdf). My CV is also available on [StackOverflow Careers](http://careers.stackoverflow.com/stevehocking).
 
