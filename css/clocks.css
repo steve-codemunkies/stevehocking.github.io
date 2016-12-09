@@ -1,0 +1,5 @@
+.page-content > .post-header h1,
+.page-content > .post-header h2,
+.page-content > .post-header .meta {
+  color: #333;
+}
