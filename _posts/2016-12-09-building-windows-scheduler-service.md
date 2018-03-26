@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title:  	"Building a Windows Service to run scheduled tasks the more sensible way"
+title:  	"Building a Windows Service to run scheduled tasks the more sensible way - Part 1"
 description:  "Topshelf, Quartz.Net, Autofac and Serilog; Oh My! What a time to be alive!"
 date:   	2016-12-09 15:00:00
 categories: topshelf quartz.net autofac serilog
@@ -10,7 +10,9 @@ hero-image: /assets/2016-11-13-clocks.jpg
 supplemental-css: /css/clocks.css
 ---
 
-TL;DR: Build a scheduling service using Topshelf, Quartz.net, Autofac and Serilog, [code available](https://github.com/steve-codemunkies/WindowsSchedulerService).
+TL;DR: Build a scheduling service using Topshelf, Quartz.net, Autofac and Serilog, [code for part one available](https://github.com/steve-codemunkies/WindowsSchedulerService/tree/b581129db94d0083c01f4817e3869e82a7ec22a7).
+
+**Update:** Part two is on the way!
 
 Windows comes with a perfectly good [built-in scheduler](https://technet.microsoft.com/en-us/library/cc748993(v=ws.11).aspx). But sometimes you might want something more within your own control. In my case I needed to run three jobs one after the other (a data update, an extract and finally a report on the extract). And these are the technologies I settled on to implement this wonder of the scheduling world:
 
