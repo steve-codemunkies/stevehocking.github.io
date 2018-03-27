@@ -2,7 +2,7 @@
 layout: 	post
 title:  	"Building a Windows Service to run scheduled tasks the more sensible way - The long awaited Part 2!"
 description:  "Adding in Quartz.Net and doing some actual scheduling! What a time to be alive!"
-date:   	2018-03-26 20:00:00
+date:   	2018-03-27 08:45:00+01:00
 categories: topshelf quartz.net autofac serilog
 comments: true
 page-type: article
@@ -10,11 +10,14 @@ hero-image: /assets/2016-11-13-clocks.jpg
 supplemental-css: /css/clocks.css
 ---
 
+TL;DR: Adding a Quartz.net scheduler to a service built with Topshelf, Autofac and Serilog is pretty straightforward. Using a configuration file for the scheduling opens up lots of possibilies. [Code for the whole solution is available](https://github.com/steve-codemunkies/WindowsSchedulerService).
+
+
 In [part one]({% post_url 2016-12-09-building-windows-scheduler-service %}) of this mini-series we setup a Windows Service using [Topshelf](http://topshelf-project.com/), and it had a funky little class that setup a timer to repeatedly fire an event. This though was not the promised scheduler.
 
 After a brief interlude I'm back to fill in the gaps.
 
-(Ignoring some [version updating](https://github.com/steve-codemunkies/WindowsSchedulerService/commit/87981e24891603a6563ad7a18f3598a2975fa101)) The first thing I did was to install [Quartz.Net](http://www.quartz-scheduler.net/) and some helper packages. This is done through the _Package Manager Console_ with the following commands: `Install-Package Quartz.Plugins -DependencyVersion Highest` and `Install-Package Autofac.Extras.Quartz`. Installing `Autofac.Extras.Quartz` is done to bring some key helper classes that plumb Autofac and Quartz together. But why bring `Quartz.Plugins`, why not just bring `Quartz`? The reason for this is that it allows us to configure our jobs in a _configuration file_. And put simply this (to me at least) is much more interesting than hard coding the jobs in code, or heavens help us, inventing our own method of loading schedules.
+(Ignoring some [version updating](https://github.com/steve-codemunkies/WindowsSchedulerService/commit/87981e24891603a6563ad7a18f3598a2975fa101)) The first thing I did was to install [Quartz.Net](http://www.quartz-scheduler.net/) and some helper packages. This is done through the _Package Manager Console_ with the following commands: `Install-Package Quartz.Plugins -DependencyVersion Highest` and `Install-Package Autofac.Extras.Quartz`. Installing `Autofac.Extras.Quartz` is done to bring some key helper classes that plumb Autofac and Quartz together. But why bring `Quartz.Plugins`, why not just bring `Quartz`? The reason for this is that it allows us to configure our jobs in a _configuration file_. And put simply this (to me at least) is much more interesting and flexible than hard coding the jobs in code, or heavens help us, inventing our own method of loading schedules.
 
 It's still necessary to do a little bit more plumbing to get `Topshelf` and `Quartz.net` talking to each other, and this is where a new implementation of `ITestService` comes in:
 
@@ -129,3 +132,36 @@ We're doing a few things here. We're telling `Quartz.net` to use a plugin to par
 ```
 
 `Quartz.net` splits all scheduled jobs into two parts, the `<job/>` which is the what, and the `<trigger/>` which is the when. Because of the way that `Quartz.net` is setup you can easily extend the triggers, and indeed my team has done this with a _follow-on_ trigger, that allows us to schedule just one job, but as part of each job specify the next job that should be run. For us this means that we have been able easily break down a complex export task to six simpler tasks, and schedule them one after the other without guessing how long each one will take.
+
+It's worth calling out the `/job-scheduling-data/schedule/job/job-type` element. This is the [Fully Qualified Type Name](https://platinumdogs.me/2010/01/05/net-5-part-or-fully-qualified-type-and-assembly-names/) for the type that implements `IJob`. I haven't specified the `Version`, `Culture` or `PublicKeyToken` as they are not necessary. So now we need to implement the `Service.SampleJob`:
+
+```
+public class SampleJob : IJob
+{
+    private readonly ILogger _logger;
+    private readonly Guid _tellTale = Guid.NewGuid();
+
+    public SampleJob(ILogger logger)
+    {
+        _logger = logger;
+    }
+
+    public Task Execute(IJobExecutionContext context)
+    {
+        return Task.Run(() =>
+        {
+            _logger.Information("Executing sample job");
+            _logger.Information($"Name: {context.JobDetail.Key.Name}");
+            _logger.Information($"Description: '{context.JobDetail.Description}'");
+            _logger.Information($"Fire time utc: {context.FireTimeUtc:yyyy-MM-dd HH:mm:ss zzz}");
+            foreach (var data in context.JobDetail.JobDataMap)
+            {
+                _logger.Information($"\tKey: {data.Key}; Value: {data.Value}");
+            }
+            _logger.Information($"Tell tale: {_tellTale}");
+        });
+    }
+}
+```
+
+The `_tellTale` is simply there to show that the job class is instantiated every time the trigger fires. This is important because if you have state that needs to be stored between job calls you need to find somewhere to store it. As you can see the `Execute` method returns a `Task`, but you need to [be careful about mixing styles](http://blog.stephencleary.com/2012/02/async-and-await.html). The rest of the method simply demonstrates how to get data from the context.
