@@ -14,6 +14,8 @@ TL;DR: Build a scheduling service using Topshelf, Quartz.net, Autofac and Serilo
 
 **Update:** Part two is on the way!
 
+**Update 2:** [Part two is now available]({% post_url 2018-03-27-building-windows-scheduler-service-pt2 %})
+
 Windows comes with a perfectly good [built-in scheduler](https://technet.microsoft.com/en-us/library/cc748993(v=ws.11).aspx). But sometimes you might want something more within your own control. In my case I needed to run three jobs one after the other (a data update, an extract and finally a report on the extract). And these are the technologies I settled on to implement this wonder of the scheduling world:
 
 * [Topshelf](http://topshelf-project.com/) - a rather fantastic little piece of software that removes the pain from creating a [Windows Service](https://msdn.microsoft.com/en-us/library/zt39148a(v=vs.110).aspx)
