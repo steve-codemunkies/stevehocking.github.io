@@ -451,3 +451,8 @@ li img {
     visibility: hidden;
   }
 }
+
+.giphy-embed-right {
+  float: right;
+  margin-left: 10px;
+}
