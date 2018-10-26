@@ -8,7 +8,7 @@ comments: true
 page-type: article
 ---
 
-The cloud space is becoming really exciting now, and although my workplace may not be keeping up, my skills need to. It's all very well noodling around with individual technologies, but there's nothing like a project, however far fetched and over-wrought, to bring things together.
+The cloud space is becoming really exciting now, and moving very fast, so my skills need to keep up! It's all very well noodling around with individual technologies, but there's nothing like a project, however far fetched and over-wrought, to bring things together.
 
 After attending a [brilliant talk](https://speakerdeck.com/shahiddev/kubernetes-for-net-developers) by [Shahid Iqbal](https://twitter.com/ShahidDev) ([video](https://www.youtube.com/watch?v=_-rxEBK97CQ)), I started noodling with Docker, and then realized that I had a potential project. [This blog](http://www.codemunki.es) is hosted on [GitHub](https://github.com/steve-codemunkies/steve-codemunkies.github.io). Writing the blog locally I use [Jekyll](https://jekyllrb.com/) to check what I'm creating (this is the underlying technology behind GitHub Pages). Handily this also creates a whole bunch of XML. Score!
 
