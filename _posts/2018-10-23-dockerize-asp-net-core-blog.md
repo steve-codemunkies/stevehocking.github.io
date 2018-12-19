@@ -45,3 +45,9 @@ The last step (for this article) is to actually dockerize the application. And t
 * The docker cli needs to be logged in to the docker hub, this is easily done with the `docker login` command. But beware that the cli needs your _docker id_, _not_ the email address you registered with.
 
 You can have a look at the [current application on my GitHub](https://github.com/steve-codemunkies/Blog/tree/e973b94d4d4b293eabacd3fd2da53889a5572d73).
+
+## Addendum
+
+The actual commands I used to build and run the app are as follows: `docker build -t Blog.App .` (**N.B.** You must be in the `src/Blog.Application` directory when you execute this command.) This creates an image called `Blog.App`.
+
+To run the app you then use the command `docker run -d -p 8080:80 --name blogapp Blog.App`. The `-d` flag runs the image in the background. The `-p` publishes a (map of the) container to the host, in this case causing the containers port 80 to be exposed as port 8080. The `--name` parameter assigns a name to the running container. The final parameter is the image to be executed.
