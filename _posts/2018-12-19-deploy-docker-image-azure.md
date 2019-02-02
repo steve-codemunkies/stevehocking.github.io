@@ -9,6 +9,8 @@ page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
 ---
 
+*UPDATE*: In trying to get the container running in AKS, I repeatedly ran up against issues with AKS pulling the image from the the Container Registry. I _eventually_ resolved this by changing the region from `northeurope` to `westeurope`. This has been reflected in the `az group create ...` command below.
+
 Back in October [I demonstrated how to dockerize an ASP.NET core application]({% post_url 2018-10-23-dockerize-asp-net-core-blog %}). Now to show how to get that image up to the cloud.
 
 One of the many things good things coming out of Azure is the move away from UI to the command line to setup _everything_. The Azure CLI tools are special because not only are they available to install locally ([PC, macOS and many flavours of linux](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)), but they are also available via the [Azure Portal](https://portal.azure.com/) (click the icon circled red on your portal toolbar).
@@ -33,12 +35,12 @@ Next we're going to create a resource group. According to the [Azure Cloud Gloss
 
 > A container in Resource Manager that holds related resources for an application.
 
-Importantly the Reource Group allows us to direct which data centre our resources should be created in, and then manage those resources _en-masse_. To create the new Resource Group we use the following command: `az group create --name "BlogGroup" --location northeurope`. This generates the following output:
+Importantly the Reource Group allows us to direct which data centre our resources should be created in, and then manage those resources _en-masse_. To create the new Resource Group we use the following command: `az group create --name "BlogGroup" --location westeurope`. This generates the following output:
 
 ```
 {
   "id": "/subscriptions/<subscription id>/resourceGroups/BlogGroup",
-  "location": "northeurope",
+  "location": "westeurope",
   "managedBy": null,
   "name": "BlogGroup",
   "properties": {
