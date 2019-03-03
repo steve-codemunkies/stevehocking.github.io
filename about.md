@@ -4,6 +4,7 @@ title: "About codemunkies"
 description:  "Information about codemunkies ltd and Steven Hocking"
 permalink: /about/
 page-type: article
+include: true
 ---
 
 Hello, I'm Steven Hocking and I'm a technical architect and software engineer.
