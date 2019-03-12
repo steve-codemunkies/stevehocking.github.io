@@ -14,4 +14,4 @@ stackoverflow-userid: 747649
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
-include: ["keybase.txt"]
+include: ["keybase.txt", "public.key"]
