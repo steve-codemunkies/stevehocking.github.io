@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/stevehocking
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.codemunki.es
+  * I am stevehocking (https://keybase.io/stevehocking) on keybase.
+  * I have a public key ASABXYgdHaSXvdElbMBzGh8MkYHEGP2IwnIJ4ba3pg4-fgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120015d881d1da497bdd1256cc0731a1f0c9181c418fd88c27209e1b6b7a60e3e7e0a",
+      "host": "keybase.io",
+      "kid": "0120015d881d1da497bdd1256cc0731a1f0c9181c418fd88c27209e1b6b7a60e3e7e0a",
+      "uid": "b26b7a16b28015881466ac4dcb16df19",
+      "username": "stevehocking"
+    },
+    "merkle_root": {
+      "ctime": 1552423884,
+      "hash": "6cc56f6664d471e8a0d3ba2df7c44a208da02e993eb4aa25e9bc9369b4867bdf6068d1fc786b1035afefd4b1f031b8d4abed8ab7c4e9570ec75b6aa509d12362",
+      "hash_meta": "913032071ff8e6a27fb5e2c63ed1ac523a5e1f1f1f0685b6480c2fa079d73ec2",
+      "seqno": 4933813
+    },
+    "service": {
+      "entropy": "UYGaswoV4iCf4C0Z7Yevybd4",
+      "hostname": "www.codemunki.es",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1552423904,
+  "expire_in": 504576000,
+  "prev": "c177d865bef5e2151f79d7cffe4f07a79034cf78094ad185cd2cff447c76c37d",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAV2IHR2kl73RJWzAcxofDJGBxBj9iMJyCeG2t6YOPn4Kp3BheWxvYWTESpcCBsQgwXfYZb714hUfedfP/k8Hp5A0z3gJStGFzSz/RHx2w33EICNKricFY/d/Ur6cqxs1VN5bg6V8EbC7zOOWsZzsVXELAgHCo3NpZ8RA870Ex+hNxQa52BgQccldgEECxZpu0HoWg0XKDxddR/noUjwmSapt/hVty8vDaLVo4ieZgLOEwuXZOb93UcYWBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOw05A7i5ILQ0jixvtUWPomxTLvcSr+MCovhukPs8JWwo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/stevehocking
+
+==================================================================
