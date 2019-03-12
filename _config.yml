@@ -13,3 +13,5 @@ stackoverflow-userid: 747649
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
+
+include: ["keybase.txt"]
