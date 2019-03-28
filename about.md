@@ -11,27 +11,19 @@ Hello, I'm Steven Hocking and I'm a technical architect and software engineer.
 
 I have been architecting and developing software professionally since 1998, and even earlier as a hobby and through school, college and university. You can find out more about me in these locations:
 
-<ul>
+<ul class="about">
   <li>
     <a href="https://github.com/{{ site.github-username }}">
       <span class="icon github">
-        <i class="fa fa-github"></i>
+        <i class="fab fa-github"></i>
       </span>
       <span class="username">/{{ site.github-username }}</span>
     </a>
   </li>
   <li>
-    <a href="https://twitter.com/{{ site.twitter-username }}">
-      <span class="icon twitter">
-        <i class="fa fa-twitter"></i>
-      </span>
-      <span class="username">/{{ site.twitter-username }}</span>
-    </a>
-  </li>
-  <li>
     <a href="https://twitter.com/{{ site.twitter-personal-username }}">
       <span class="icon twitter">
-        <i class="fa fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
       </span>
       <span class="username">/{{ site.twitter-personal-username }}</span>
     </a>
@@ -39,9 +31,25 @@ I have been architecting and developing software professionally since 1998, and 
   <li>
     <a href="http://stackoverflow.com/users/{{ site.stackoverflow-userid }}/{{ site.stackoverflow-username }}">
       <span class="icon stackoverflow">
-        <i class="fa fa-stack-overflow"></i>
+        <i class="fab fa-stack-overflow"></i>
       </span>
       <span class="username">/{{ site.stackoverflow-username }}</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/stevenhocking">
+      <span class="icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </span>
+      <span class="username">/stevenhocking</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://keybase.io/stevehocking">
+      <span class="icon keybase">
+        <i class="fab fa-keybase"></i>
+      </span>
+      <span class="username">/stevehocking</span>
     </a>
   </li>
 </ul>
