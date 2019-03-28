@@ -1,7 +1,7 @@
 # Site settings
 title: codemunkies
 email: steve@codemunki.es
-description: "some random text"
+description: ""
 baseurl: ""
 url: "http://www.codemunki.es"
 github-username: steve-codemunkies
