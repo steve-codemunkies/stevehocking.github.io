@@ -11,44 +11,44 @@ Hello, I'm Steven Hocking and I'm a technical architect and software engineer.
 
 I have been architecting and developing software professionally since 1998, and even earlier as a hobby and through school, college and university. You can find out more about me in these locations:
 
-<ul class="about">
+<ul class="about contact">
   <li>
+    <span class="li icon github">
+      <i class="fab fa-github"></i>
+    </span>
     <a href="https://github.com/{{ site.github-username }}">
-      <span class="icon github">
-        <i class="fab fa-github"></i>
-      </span>
       <span class="username">/{{ site.github-username }}</span>
     </a>
   </li>
   <li>
+    <span class="li icon twitter">
+      <i class="fab fa-twitter"></i>
+    </span>
     <a href="https://twitter.com/{{ site.twitter-personal-username }}">
-      <span class="icon twitter">
-        <i class="fab fa-twitter"></i>
-      </span>
       <span class="username">/{{ site.twitter-personal-username }}</span>
     </a>
   </li>
   <li>
+    <span class="li icon stack-overflow">
+      <i class="fab fa-stack-overflow"></i>
+    </span>
     <a href="http://stackoverflow.com/users/{{ site.stackoverflow-userid }}/{{ site.stackoverflow-username }}">
-      <span class="icon stackoverflow">
-        <i class="fab fa-stack-overflow"></i>
-      </span>
       <span class="username">/{{ site.stackoverflow-username }}</span>
     </a>
   </li>
   <li>
+    <span class="li icon linked-in">
+      <i class="fab fa-linkedin-in"></i>
+    </span>
     <a href="https://www.linkedin.com/in/stevenhocking">
-      <span class="icon linkedin">
-        <i class="fab fa-linkedin-in"></i>
-      </span>
       <span class="username">/stevenhocking</span>
     </a>
   </li>
   <li>
+    <span class="li icon keybase">
+      <i class="fab fa-keybase"></i>
+    </span>
     <a href="https://keybase.io/stevehocking">
-      <span class="icon keybase">
-        <i class="fab fa-keybase"></i>
-      </span>
       <span class="username">/stevehocking</span>
     </a>
   </li>

@@ -280,9 +280,18 @@ a:visited { color: #aa0000; } */
 .post ul,
 .post ol { margin-left: 1.35em; }
 
-.post ul.about {
+/* about */
+
+.post ul.about.contact {
   list-style: none;
-  padding-left: 40px;
+}
+
+.post ul.about span.li.icon {
+  margin-left: -20px;
+}
+
+.post ul.about span.li.icon i {
+  width: 19.2px;
 }
 
 .post pre code { border: none; }
