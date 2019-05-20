@@ -7,6 +7,7 @@ categories: legacy authentication authorization authorisation "active directory"
 comments: true
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
+tile-image: /assets/2015-11-05-legacy-tile.jpg
 ---
 One of the more, _ahh_, _interesting_ points about the two legacy systems I'm helping to maintain are that both of them use use essentially custom built security to authenticate and authorize (a&a) users. And neither are very good. The good news is that both of these applications are internal, so it isn't the end of the world, yet...
 

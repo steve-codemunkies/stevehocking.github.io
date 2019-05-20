@@ -7,6 +7,7 @@ categories: docker azure
 comments: true
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
+tile-image: /assets/2018-12-12-container-ship-tile.jpg
 ---
 
 In a [previous post]({% post_url 2018-12-19-deploy-docker-image-azure %}) I deployed a docker image to an Azure Container Registry. I then spent most of the following month (on and off) trying to get kubernetes to spin and run the image as a container. Eventually I changed the region from `northeurope` to `westeurope` and everything started to work... I've put an update into that previous post.

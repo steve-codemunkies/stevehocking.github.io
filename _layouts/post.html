@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-{% if page.hero-image %}
-<header class="post-header" style="background-image: url('{{ page.hero-image }}'); background-size: cover;">
+{% if page.hero-image and page.invert-header %}
+<header class="post-header invert" style="background-image: url('{{ page.hero-image }}');">
+{% elsif page.hero-image %}
+<header class="post-header post" style="background-image: url('{{ page.hero-image }}');">
 {% else %}
-<header class="post-header" style="background-image: url('/assets/blog-banner.jpg');">
+<header class="post-header post" style="background-image: url('/assets/blog-banner.jpg');">
 {% endif %}
   <div class="wrap">
     <img src="/cm.png" alt="codemunkies" />

@@ -95,6 +95,11 @@ Recently I have been working with these technologies:
 
 You can also download a copy of my [CV](/assets/2019-03-17-steven-hocking-cv.pdf). My CV is also available on [StackOverflow Careers](http://careers.stackoverflow.com/stevehocking).
 
-Finally you can check out my certifications:
+You can check out my certifications:
 
 * [Microsoft](https://mcp.microsoft.com/authenticate/validatemcp.aspx) (Transcript ID: 663027; Access code: 1976Sh0804).
+
+<div class="photo-credit">
+    <div><img src="/assets/action-blur-close-up-sml.jpg" alt="Photo by Soumil Kumar from Pexels" /></div>
+    <p>Image credit: <a href="https://www.pexels.com/photo/photo-of-person-typing-on-computer-keyboard-735911/" target="_blank">Photo by Soumil Kumar from Pexels</a></p>
+</div>

@@ -7,7 +7,8 @@ categories: topshelf quartz.net autofac serilog
 comments: true
 page-type: article
 hero-image: /assets/2016-11-13-clocks.jpg
-supplemental-css: /css/clocks.css
+tile-image: /assets/2016-11-13-clocks-tile.jpg
+invert-header: true
 ---
 
 TL;DR: Build a scheduling service using Topshelf, Quartz.net, Autofac and Serilog, [code for part one available](https://github.com/steve-codemunkies/WindowsSchedulerService/tree/b581129db94d0083c01f4817e3869e82a7ec22a7).

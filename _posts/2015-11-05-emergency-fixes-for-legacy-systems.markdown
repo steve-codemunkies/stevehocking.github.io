@@ -7,6 +7,7 @@ categories: legacy maintenance
 comments: true
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
+tile-image: /assets/2015-11-05-legacy-tile.jpg
 ---
 
 **TL;DR** Planning, even in an emergency, produces confidence and ensures the desired outcome is reached.

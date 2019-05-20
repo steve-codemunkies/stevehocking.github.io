@@ -7,7 +7,8 @@ categories: topshelf quartz.net autofac serilog
 comments: true
 page-type: article
 hero-image: /assets/2016-11-13-clocks.jpg
-supplemental-css: /css/clocks.css
+tile-image: /assets/2016-11-13-clocks-tile.jpg
+invert-header: true
 ---
 
 TL;DR: Adding a Quartz.net scheduler to a service built with Topshelf, Autofac and Serilog is pretty straightforward. Using a configuration file for the scheduling opens up lots of possibilies. [Code for the whole solution is available](https://github.com/steve-codemunkies/WindowsSchedulerService).

@@ -7,6 +7,7 @@ categories: docker localhost container
 comments: true
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
+tile-image: /assets/2018-12-12-container-ship-tile.jpg
 ---
 
 Over the last few days I've been working on solving a DevOps style problem. And all of the various bits and pieces I've been trying to string together have been in Docker containers. My (somewhat faulty, it now turns out) understanding was that one container should be able to talk to another container _just like that_!

@@ -7,6 +7,7 @@ categories: legacy maintenance database tools
 comments: true
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
+tile-image: /assets/2015-11-05-legacy-tile.jpg
 ---
 As I've [previously posted]({% post_url 2015-11-05-emergency-fixes-for-legacy-systems %}) I've joined a new team looking after two very different systems. And both systems have databases; two very **_large_** databases. And both databases need their schema and static data managing and updating.
 

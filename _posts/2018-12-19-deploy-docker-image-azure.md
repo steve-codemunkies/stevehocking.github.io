@@ -7,6 +7,7 @@ categories: docker azure
 comments: true
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
+tile-image: /assets/2018-12-12-container-ship-tile.jpg
 ---
 
 *UPDATE*: In trying to get the container running in AKS, I repeatedly ran up against issues with AKS pulling the image from the the Container Registry. I _eventually_ resolved this by changing the region from `northeurope` to `westeurope`. This has been reflected in the `az group create ...` command below.

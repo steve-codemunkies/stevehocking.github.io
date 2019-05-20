@@ -7,6 +7,7 @@ categories: event events eventstore eventsourcing
 comments: true
 page-type: article
 hero-image: /assets/2019-02-14-events.jpg
+tile-image: /assets/2019-02-14-events-tile.jpg
 ---
 
 In my [last post]({% post_url 2019-02-14-events-events-events %}) I looked at what events are, why they might be helpful to you, where they come from and some possible ways of dealing with them. At the end of the post I briefly mentioned that Event Sourcing may be helpful to you, in some capacity.

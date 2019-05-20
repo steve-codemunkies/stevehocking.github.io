@@ -7,6 +7,7 @@ categories: aspnetcore docker
 comments: true
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
+tile-image: /assets/2018-12-12-container-ship-tile.jpg
 ---
 
 The cloud space is becoming really exciting now, and moving very fast, so my skills need to keep up! It's all very well noodling around with individual technologies, but there's nothing like a project, however far fetched and over-wrought, to bring things together.

@@ -7,6 +7,7 @@ categories: powershell bulk
 comments: true
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
+tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
 ---
 
 For reasons I today needed to apply some bulk updates to a _lot_ of code files. A colleague did this last week, using [sublime text](https://www.sublimetext.com/) to make the required changes within files, and then I helped him put together the necessary changes to rename files in Powershell. This week it has been my turn to do something very similar. Except the problem is, whilst I know I can do these changes in Powershell the exact commands always elude me and I need to work them out each time. So now is the time to document how I did it today for posterity.

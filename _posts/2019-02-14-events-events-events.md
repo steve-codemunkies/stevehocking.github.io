@@ -7,6 +7,7 @@ categories: event events eventstore
 comments: true
 page-type: article
 hero-image: /assets/2019-02-14-events.jpg
+tile-image: /assets/2019-02-14-events-tile.jpg
 ---
 
 ## What is an event?

@@ -2,23 +2,25 @@
 layout: default
 permalink: /
 ---
-
 <div class="wrap home">
-  <img src="/cm.png" alt="codemunkies" />
 
-  <header class="post-header">
-    <h1>Posts</h1>
-  </header>
+  {% for post in site.posts %}
+    {% if post.tile-image and post.invert-header %}
+  <div class="invert" style="background-image: url('{{ post.tile-image }}');">
+    {% elsif post.tile-image %}
+  <div style="background-image: url('{{ post.tile-image }}');">
+    {% else %}
+  <div>
+    {% endif %}
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <p class="post-description">{{ post.description }}</p>
+    <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+  </div>
+  {% endfor %}
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <p>{{ post.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+</div>
+
+<div class="subscribe-footer">
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

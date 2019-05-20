@@ -7,6 +7,7 @@ categories: docker
 comments: true
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
+tile-image: /assets/2018-12-12-container-ship-tile.jpg
 ---
 
 This is more for my own benefit, but other may find it useful too.

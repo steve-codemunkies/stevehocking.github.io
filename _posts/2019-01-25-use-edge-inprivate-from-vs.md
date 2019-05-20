@@ -7,6 +7,7 @@ categories: vs visualstudio edge inprivate
 comments: true
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
+tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
 ---
 
 When working on web projects it can be useful to make use of the browsers _Incognito_/_Private Browsing_/_InPrivate_ mode. The major reason is that the browser does not cache content or cookies between sessions when running in these modes.

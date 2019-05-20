@@ -7,6 +7,7 @@ categories: legacy maintenance sql tsql
 comments: true
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
+tile-image: /assets/2015-11-05-legacy-tile.jpg
 ---
 
 We have a tendency to think of computers and the software that runs on them as ephemeral, fleeting artefacts, here today, gone tomorrow. Both of the systems I and my team look after disprove this. And indeed the older of the two (nearly twenty years old now) is the subject of this post.

@@ -7,6 +7,7 @@ categories: pit success guidance teams
 comments: true
 page-type: article
 hero-image: /assets/2018-06-01-indy-snake-pit.jpg
+tile-image: /assets/2018-06-01-indy-snake-pit-tile.jpg
 ---
 
 A long time ago, on something less powerful than my current wristwatch, I read an article by [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) titled [

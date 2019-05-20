@@ -7,6 +7,7 @@ categories: git hg mercurial
 comments: true
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
+tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
 ---
 
 ## TL;DR
