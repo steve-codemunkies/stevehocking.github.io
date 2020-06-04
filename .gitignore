@@ -2,3 +2,5 @@ _site
 _drafts
 --future
 .jekyll-cache
+
+**/*.Identifier
