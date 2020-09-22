@@ -15,3 +15,4 @@ markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
 include: ["keybase.txt", "public.key"]
+exclude: [".devcontainer", ".vscode"]

@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start jekyll (drafts, future) for codemunki.es",
+            "command": "jekyll",
+            "args": [
+                "serve",
+                "-w",
+                "-D",
+                "--future"
+            ],
+            "type": "shell",
+            "problemMatcher": []
+        },
+        {
+            "label": "Start jekyll for codemunki.es",
+            "command": "jekyll",
+            "args": [
+                "serve",
+                "-w"
+            ],
+            "type": "shell",
+            "problemMatcher": []
+        }
+    ]
+}
