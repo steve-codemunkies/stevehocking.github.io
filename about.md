@@ -93,8 +93,6 @@ Recently I have been working with these technologies:
 * [Octopus Deploy](https://octopus.com/)
 * [Microsoft Powershell](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx)
 
-You can also download a copy of my [CV](/assets/2020-08-24-steven-hocking-cv.pdf). My CV is also available on [StackOverflow Careers](http://careers.stackoverflow.com/stevehocking).
-
 You can check out my certifications:
 
 * [Microsoft](https://mcp.microsoft.com/authenticate/validatemcp.aspx) (Transcript ID: 663027; Access code: 1976Sh0804).
