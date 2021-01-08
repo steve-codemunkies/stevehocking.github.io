@@ -14,5 +14,9 @@ stackoverflow-userid: 747649
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
-include: ["keybase.txt", "public.key"]
-exclude: [".devcontainer", ".vscode"]
+include:
+  - keybase.txt
+  - public.key
+exclude:
+  - .devcontainer
+  - .vscode
