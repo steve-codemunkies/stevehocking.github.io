@@ -6,17 +6,34 @@
 		"dockerfile": "Dockerfile",
 		"args": { 
 			// Update 'VARIANT' to pick a Ruby version: 2, 2.7, 2.6, 2.5
-			"VARIANT": "2.7",
+			"VARIANT": "3.1",
 			// Options
-			"INSTALL_NODE": "false",
+			"INSTALL_NODE": "true",
 			"NODE_VERSION": "lts/*"
 		}
 	},
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "/bin/bash",
+				"icon": "terminal-bash"
+			}
+		},
+		"terminal.integrated.defaultProfile.linux": "bash"
 	},
+
+	// Add aws cli as a feature
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": { }
+	},
+
+	// Mount the local aws directory to reuse pre-configured credentials
+	// See https://cloudbytes.dev/snippets/mount-aws-credentials-on-vscode-devcontainers
+	"mounts": [
+        "source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
+    ],
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
@@ -30,7 +47,7 @@
 	"forwardPorts": [ 3000, 4000 ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "cd dev-awesome-tool && npm i",
+	"postCreateCommand": "chmod +x ./.devcontainer/postCreateCommand.sh && ./.devcontainer/postCreateCommand.sh",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"

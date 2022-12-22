@@ -1,0 +1,46 @@
+name: Build and deploy beta.codemunki.es
+run-name: Build and deploy beta.codemunki.es ${{ github.actor }}
+
+on:
+  push:
+    branches:
+      - 'main'
+  
+  # Allow this workflow to run from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  publish-beta-codemunki-es:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 setup
+        uses: actions/checkout@v2
+
+      - name: setup node 🍵📃 
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: setup ruby 💎 
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
+      # Build the website (locally)
+      - name: install jekyll dependencies & build site 🔨
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true # Enables caching. Similar to https://github.com/actions/cache.
+
+      - name: Configure aws credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: install node dependencies 🔨
+        run: cd cdk && npm install
+
+      - name: deploy it all! 🙈
+        run: cd cdk && npm run cdk deploy
