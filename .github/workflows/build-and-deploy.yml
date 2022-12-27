@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'aws/*'
   
   # Allow this workflow to run from the Actions tab
   workflow_dispatch:

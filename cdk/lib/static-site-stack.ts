@@ -3,7 +3,7 @@ import { Construct } from 'constructs';
 import { Bucket, BucketAccessControl } from "aws-cdk-lib/aws-s3";
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
 import * as path from "path";
-import { Distribution, OriginAccessIdentity, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront';
+import { Distribution, Function, FunctionCode, FunctionEventType, OriginAccessIdentity, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront';
 import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins';
 import { Certificate } from 'aws-cdk-lib/aws-certificatemanager';
 import console = require('console');
@@ -32,15 +32,23 @@ export class StaticSiteStack extends Stack {
 
         const originAccessIdentity = new OriginAccessIdentity(this, 'codemunkies-site-originAccessIdentity');
         bucket.grantRead(originAccessIdentity);
+
+        const rewriteFunction = new Function(this, 'codemunkies-urlrewrite-function', {
+            code: FunctionCode.fromFile({ filePath: 'cfd-fn/url-rewrite.js' }),
+        });
         
         const distribution = new Distribution(this, 'codemunkies-distribution', {
             certificate: certificate,
             defaultRootObject: 'index.html',
             defaultBehavior: {
+                functionAssociations: [{
+                    function: rewriteFunction,
+                    eventType: FunctionEventType.VIEWER_REQUEST
+                }],
                 origin: new S3Origin(bucket, {originAccessIdentity}),
                 viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
             },
-            domainNames: [ 'beta.codemunki.es' ]
+            domainNames: [ 'beta.codemunki.es' ],
         });
     }
 }

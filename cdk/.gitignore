@@ -6,3 +6,6 @@ node_modules
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# Allow cloudfront distribution function to be picked up
+!/cfd-fn/*.js
