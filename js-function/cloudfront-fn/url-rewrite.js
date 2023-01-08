@@ -16,3 +16,5 @@ function handler(event) {
     
     return request;
 }
+
+handler;

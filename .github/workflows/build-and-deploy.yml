@@ -40,7 +40,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: install node dependencies 🔨
+      - name: install CloudFront Function dependencies and build 🧪🔨
+        run: cd js-function && npm install && npm run test
+
+      - name: install cdk node dependencies 🔨
         run: cd cdk && npm install
 
       - name: deploy it all! 🙈

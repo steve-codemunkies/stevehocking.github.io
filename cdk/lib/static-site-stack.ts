@@ -34,7 +34,7 @@ export class StaticSiteStack extends Stack {
         bucket.grantRead(originAccessIdentity);
 
         const rewriteFunction = new Function(this, 'codemunkies-urlrewrite-function', {
-            code: FunctionCode.fromFile({ filePath: 'cfd-fn/url-rewrite.js' }),
+            code: FunctionCode.fromFile({ filePath: '../js-function/cloudfront-fn/url-rewrite.js' }),
         });
         
         const distribution = new Distribution(this, 'codemunkies-distribution', {
