@@ -10,7 +10,7 @@ hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
 ---
 
-The ultimate goal in moving my web-site to AWS is to make it possible to publish articles via a web interface. To build everything necessary to make this possible will take time, so I want to make reasonably small changes that will add value. The first set of changes I made (detailed in {{% post_url 2022-12-22-evolving-architecture-publish-jekyll-aws-cdk-github-actions %}}) provided a route to getting content on to the internet. But how to actually generate that content? This post provide a high level overview of my next steps.
+The ultimate goal in moving my web-site to AWS is to make it possible to publish articles via a web interface. To build everything necessary to make this possible will take time, so I want to make reasonably small changes that will add value. The first set of changes I made (detailed in [Evolving Architecture: Publishing a Jekyll site to AWS using GitHub Actions and AWS CDK]({% post_url 2022-12-22-evolving-architecture-publish-jekyll-aws-cdk-github-actions %})) provided a route to getting content on to the internet. But how to actually generate that content? This post provide a high level overview of my next steps.
 
 The current architecture looks like this:
 

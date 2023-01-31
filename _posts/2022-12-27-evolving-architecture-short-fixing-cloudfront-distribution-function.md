@@ -10,7 +10,7 @@ hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
 ---
 
-When I originally setup the infrastructure to serve my static site (for {% post_url 2022-12-22-evolving-architecture-publish-jekyll-aws-cdk-github-actions %}) I manually set things up in the AWS console.
+When I originally setup the infrastructure to serve my static site (for [Evolving Architecture: Publishing a Jekyll site to AWS using GitHub Actions and AWS CDK]({% post_url 2022-12-22-evolving-architecture-publish-jekyll-aws-cdk-github-actions %})) I manually set things up in the AWS console.
 
 ![Sue me, I'm an idiot 😉](/assets/2022-12-27-sue-me.gif)
 
