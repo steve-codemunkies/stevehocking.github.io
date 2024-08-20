@@ -6,3 +6,5 @@ _drafts
 **/*.Identifier
 
 cdk-demo
+
+script
