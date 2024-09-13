@@ -5,6 +5,9 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "devcontainer",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"runServices": [
+		"plantuml"
+	],
 
 	// Add aws cli as a feature
 	"features": {
@@ -40,7 +43,8 @@
 				"shopify.ruby-lsp",
 				"davidanson.vscode-markdownlint",
 				"yzhang.markdown-all-in-one",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"jebbs.plantuml"
 			]
 		}
 	}

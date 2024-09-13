@@ -11,3 +11,13 @@ services:
     volumes:
       - ../..:/workspaces:cached
     command: sleep infinity
+    container_name: codemunkies-github
+    network_mode: service:plantuml
+
+  plantuml:
+    image: plantuml/plantuml-server:jetty
+    container_name: plantuml-server
+    ports:
+      - 8080:8080
+    environment:
+      - BASE_URL=plantuml
