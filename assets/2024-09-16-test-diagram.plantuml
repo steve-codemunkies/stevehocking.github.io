@@ -1,0 +1,18 @@
+@startuml Test Diagram
+
+activate Bob
+Bob -> Alice++ : Asks a question
+Alice -> Internet++: Serches for answer
+
+note right Internet
+    Alice can use:
+    * [[https://www.bing.co.uk Bing]]
+    * [[https://duckduckgo.com/&kad=gd_GB DuckDuckGo]]
+    * [[https://www.google.co.uk Google]]
+end note
+
+Internet --> Alice--: Returns results
+Alice --> Bob--: Helps Bob
+deactivate Bob
+
+@enduml
