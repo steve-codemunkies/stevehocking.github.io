@@ -6,8 +6,8 @@ date:   	2024-09-16 14:45:00
 categories: docker docker-compose vscode plantuml
 comments: true
 page-type: article
-hero-image: /assets/2019-01-07-elite-hacking.jpg
-tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
+hero-image: /assets/2018-12-12-container-ship.jpg
+tile-image: /assets/2018-12-12-container-ship-tile.jpg
 ---
 
 One of the more useful and powerful tools I have been using for the last few years is [PlantUML](https://plantuml.com/). PlantUML is a Domain Specific Language which allows you to create diagrams with code, many types of diagram. But why would you want to create a diagram in a DSL, rather than a dedicated tool such as [draw.io](https://www.drawio.com/)? My background is in software development, so I am used to looking at lines of code. But I find that if I have a tool that is responsible for layout then I am much less concerned with how the diagram looks, and more concerned with the information that the diagram is conveying.
