@@ -1,8 +1,9 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.154.0/containers/ruby/.devcontainer/base.Dockerfile
 
 # [Choice] Ruby version: 2, 2.7, 2.6, 2.5
-ARG VARIANT="2"
-FROM mcr.microsoft.com/vscode/devcontainers/ruby:0-${VARIANT}
+# ARG VARIANT="2"
+# FROM mcr.microsoft.com/vscode/devcontainers/ruby:0-${VARIANT}
+FROM mcr.microsoft.com/vscode/devcontainers/ruby
 
 # [Option] Install Node.js
 ARG INSTALL_NODE="true"

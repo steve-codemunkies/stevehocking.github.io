@@ -40,7 +40,6 @@
 				"terminal.integrated.defaultProfile.linux": "bash"
 			},
 			"extensions": [
-				"shopify.ruby-lsp",
 				"davidanson.vscode-markdownlint",
 				"yzhang.markdown-all-in-one",
 				"ms-azuretools.vscode-docker",
@@ -49,3 +48,6 @@
 		}
 	}
 }
+
+
+
