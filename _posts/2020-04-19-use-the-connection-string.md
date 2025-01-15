@@ -4,7 +4,7 @@ title:  	"Use the connection string"
 description:  "I am a developer. I am one with the connection string, and the connection string will guide me."
 date:           2020-04-19 15:30:00
 categories: connectionstring sqlserver eventstore mongodb
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2020-04-19-luke.jpg
 tile-image: /assets/2020-04-19-luke-tile.jpg

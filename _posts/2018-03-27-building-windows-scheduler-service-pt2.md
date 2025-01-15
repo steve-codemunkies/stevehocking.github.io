@@ -4,7 +4,7 @@ title:  	"Building a Windows Service to run scheduled tasks the more sensible wa
 description:  "Adding in Quartz.Net and doing some actual scheduling! What a time to be alive!"
 date:   	2018-03-27 08:45:00+01:00
 categories: topshelf quartz.net autofac serilog
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2016-11-13-clocks.jpg
 tile-image: /assets/2016-11-13-clocks-tile.jpg

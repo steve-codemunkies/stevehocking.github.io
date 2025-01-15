@@ -4,7 +4,7 @@ title:  	"React Higher Order Components (HOC) - Unknown Event Handler Property -
 description:  "Unknown event handler property... will be ignored 👀"
 date:   	2021-05-03 16:45:00
 categories: react javascript
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2021-05-03-web-dev.jpg
 tile-image: /assets/2021-05-03-web-dev-tile.jpg

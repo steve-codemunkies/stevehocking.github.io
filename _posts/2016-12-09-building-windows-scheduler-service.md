@@ -4,7 +4,7 @@ title:  	"Building a Windows Service to run scheduled tasks the more sensible wa
 description:  "Topshelf, Quartz.Net, Autofac and Serilog; Oh My! What a time to be alive!"
 date:   	2016-12-09 15:00:00
 categories: topshelf quartz.net autofac serilog
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2016-11-13-clocks.jpg
 tile-image: /assets/2016-11-13-clocks-tile.jpg

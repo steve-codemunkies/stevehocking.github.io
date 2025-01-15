@@ -4,7 +4,7 @@ title:  	"Implementing an AverageTimer32 Performance Counter in .NET"
 description:  "Use just one performance counter to monitor performance, not with new AverageTimer32 Performance Counters"
 date:   	2015-12-08 12:30:00
 categories: dotnet csharp perfmon performance-counter averagetimer32
-comments: true
+comments: false
 page-type: article
 ---
 A task that I'm working on involves injecting quite a chunk of processing in to a performance sensitive part of the system. Luckily the system already uses performance counters to monitor the performance of this part of the system. Unfortunately it turns out that [performance counters are hard](http://www.codeproject.com/Articles/8590/An-Introduction-To-Performance-Counters). This is similar to the code that was originally in the measurement code:

@@ -4,7 +4,7 @@ title:  	"Evolving Architecture [short]: Unit Testing a Cloudfront Function"
 description:  "It is time to do the right thing"
 date:   	2023-01-07 17:25:00
 categories: evolving-architecture aws cloudfront-function js javascript typescript jest
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg

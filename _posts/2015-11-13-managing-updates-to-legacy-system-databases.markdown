@@ -4,7 +4,7 @@ title:  	"Managing updates to legacy system databases"
 description:  "Change log? Model? It's all about the tools!"
 date:   	2015-11-13 11:30:00
 categories: legacy maintenance database tools
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
 tile-image: /assets/2015-11-05-legacy-tile.jpg

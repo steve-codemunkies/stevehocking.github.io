@@ -4,7 +4,7 @@ title:  	"Spin up k8s and run your Docker image"
 description:  "You got your Docker image into Azure, now you have to run it in a container for it to be actually of use..."
 date:   	2019-01-30 21:00:00
 categories: docker azure
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
 tile-image: /assets/2018-12-12-container-ship-tile.jpg

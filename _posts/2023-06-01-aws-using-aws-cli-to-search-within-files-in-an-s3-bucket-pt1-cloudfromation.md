@@ -4,7 +4,7 @@ title:  	"AWS: Using the AWS CLI to search within files in an S3 Bucket - Part 1
 description:  "When setting up infrastructure is more straightforward than the 'simple' task you need to perform"
 date:   	2023-06-01 20:30:00
 categories: aws cloudformation awscli sns sqs lambda s3
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg

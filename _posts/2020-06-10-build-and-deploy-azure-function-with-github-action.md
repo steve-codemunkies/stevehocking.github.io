@@ -4,7 +4,7 @@ title:  	"Build and Deploy an Azure Function using Github Actions"
 description:  "Free CI/CD"
 date:   	2020-06-10 20:35:00
 categories: azure function azure-function github github-actions
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2020-04-21-clouds.jpg
 tile-image: /assets/2020-04-21-clouds-tile.jpg

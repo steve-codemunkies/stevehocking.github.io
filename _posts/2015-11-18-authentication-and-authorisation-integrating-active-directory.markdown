@@ -4,7 +4,7 @@ title:  	"Authentication and Authorization: Integrating Active Directory"
 description:  "Who are you? You want to do what? Why should I believe you?"
 date:   	2015-11-18 12:45:00
 categories: legacy authentication authorization authorisation active-directory ad ldap dotnet
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
 tile-image: /assets/2015-11-05-legacy-tile.jpg

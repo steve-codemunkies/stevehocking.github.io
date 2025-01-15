@@ -4,7 +4,7 @@ title:  	"Using JSPM with the Visual Studio (VS) 2015 Release Candidate (rc)"
 description:  "Because sometimes it's good to use the stuff that isn't available by default."
 date:   	2015-05-01 08:30:00
 categories: javascript jspm vs2015 visualstudio
-comments: true
+comments: false
 page-type: article
 ---
 The first thing I should point out is that most of the work for this was done for me; on this occasion I'm standing on the shoulders of K. Scott Allen using his recent article [Using jspm with Visual Studio 2015 and ASP.NET 5][odetocode-vs2015-jspm].

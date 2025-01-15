@@ -4,7 +4,7 @@ title:  	"Docker Networking - create and connect"
 description:  "When localhost, 127.0.0.1 or ::1 just aren't good enough"
 date:   	2019-02-13 21:00:00
 categories: docker localhost container
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
 tile-image: /assets/2018-12-12-container-ship-tile.jpg

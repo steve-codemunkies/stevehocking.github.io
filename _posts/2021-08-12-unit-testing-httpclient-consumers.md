@@ -4,7 +4,7 @@ title:  	"Unit testing HttpClient consumers"
 description:  "Testing your code that uses HttpClient may not be as hard as you thought"
 date:   	2021-08-12 20:15:00
 categories: dotnet dotnetcore httpclient ihttpclientfactory xunit unittest
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2021-08-12-quality-control.jpg
 tile-image: /assets/2021-08-12-quality-control-tile.jpg

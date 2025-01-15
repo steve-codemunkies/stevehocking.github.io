@@ -4,7 +4,7 @@ title:  	"Setting up keychain for bash on a linux server"
 description:  "Because it's nice to not enter your SSH passwords everytime you log on."
 date:   	2015-09-23 11:30:00
 categories: ubuntu linux bash keychain ssh
-comments: true
+comments: false
 page-type: article
 ---
 I have managed to do much messing around with linux recently:

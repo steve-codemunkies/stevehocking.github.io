@@ -4,7 +4,7 @@ title:  	"Running Jekyll on Windows Subsystem for Linux"
 description:  "Yuh, Jekyll, on Windows, without errors!"
 date:   	2016-09-07 10:30:00
 categories: jekyll windows bash-on-windows susbsystem-for-linux
-comments: true
+comments: false
 page-type: article
 ---
 Hello, it's been a long time. And something that has changed in that long time is the [Windows Subsystem for Linux](https://msdn.microsoft.com/en-gb/commandline/wsl/about) (WSL). As well as a catchy name that just trips off the tongue, there are also a [lot](https://blogs.windows.com/buildingapps/2016/07/22/fun-with-the-windows-subsystem-for-linux/#ULclTWZJyUUb70M2.97) [of](http://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/) [excited](http://www.hanselman.com/blog/VIDEOHowToRunLinuxAndBashOnWindows10AnniversaryUpdate.aspx) [people](https://visualstudiomagazine.com/articles/2016/07/21/bash-on-windows-linux.aspx). Including me it turns out!

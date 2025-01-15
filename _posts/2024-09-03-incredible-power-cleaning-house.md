@@ -4,7 +4,7 @@ title:  	"The incredible power of cleaning house"
 description:  "How to have AWS Elastic Container Registry (ECR) automatically expire your old images for fun, savings and security"
 date:   	2024-09-03 15:15:00
 categories: aws awscli docker elasticcontainerregistry ecr security
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg

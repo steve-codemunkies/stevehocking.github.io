@@ -4,7 +4,7 @@ title:  	"Setting up aliases in bash"
 description: "Aliases, they make life so much simpler, use them!"
 date:   	2015-04-16 15:25:00
 categories: jekyll chocolatey linux bash
-comments: true
+comments: false
 page-type: article
 ---
 A lot of the work that I  do is on Windows machines, and I spend an awful lot of time in shells of one sort or another. My shell host of choice is the excellent [conemu][conemu]. You can [download an installer][conemu-installer], or use [chocolatey][choco-top] to [install and maintain][choco-conemu] the latest version.

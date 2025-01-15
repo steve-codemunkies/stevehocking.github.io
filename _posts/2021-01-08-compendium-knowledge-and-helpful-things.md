@@ -4,7 +4,7 @@ title:  	"Compendium of Knowledge and Helpful Things - Friday 8th January, 2021"
 description:  "A run down of the things that I have found to be helpful and interesting this week"
 date:   	2021-01-08 22:20:00
 categories: compendium-of-knowledge helpful-things
-comments: true
+comments: false
 page-type: article
 ---
 

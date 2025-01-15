@@ -4,7 +4,7 @@ title:  	"Events events events!!!"
 description:  "What even are events?"
 date:   	2019-02-14 12:00:00
 categories: event events eventstore
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-02-14-events.jpg
 tile-image: /assets/2019-02-14-events-tile.jpg

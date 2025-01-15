@@ -4,7 +4,7 @@ title:  	"'Cloning' an object in javascript"
 description: "Sometimes you need an exact copy of a javascript object, here is one way to do that."
 date:   	2015-03-24 15:45:00
 categories: javascript
-comments: true
+comments: false
 page-type: article
 ---
 Some recent work that I've been doing has necessitated the 'cloning' of objects in Javascript. The objects in question are ['normal' objects][javascript-object-types-mdn] rather than Function, or constructed objects. Unfortunately this isn't just a simple case of assigning the contents of one variable to another:

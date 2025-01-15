@@ -4,7 +4,7 @@ title:  	"Deploying a docker image to Azure"
 description:  "You've made something useful, now make use of it!"
 date:   	2018-12-19 12:00:00
 categories: docker azure
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
 tile-image: /assets/2018-12-12-container-ship-tile.jpg

@@ -4,7 +4,7 @@ title:  	"AWS: Using the AWS CLI to search within files in an S3 Bucket - Part 2
 description:  "How to 'just' search for a file in an S3 bucket"
 date:   	2023-06-02 19:30:00
 categories: aws awscli s3 cloudshell jq grep
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg

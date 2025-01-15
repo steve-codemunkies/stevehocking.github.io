@@ -4,7 +4,7 @@ title:  	"Bash: Bulk rename some files recursively"
 description:  "How to 'just' rename some of the files in a directory in a bash shell (and in the child directories)"
 date:   	2023-06-16 10:40:00
 categories: bash while-loop mv sed find
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg

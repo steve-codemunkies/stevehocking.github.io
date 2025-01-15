@@ -4,7 +4,7 @@ title:  	"Useful docker commands"
 description:  "Some useful commands when working with docker"
 date:   	2018-12-12 12:00:00
 categories: docker
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
 tile-image: /assets/2018-12-12-container-ship-tile.jpg

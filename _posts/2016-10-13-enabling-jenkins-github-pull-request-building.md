@@ -4,7 +4,7 @@ title:  	"Enabling Jenkins to build GitHub Enterprise Pull Requests"
 description:  "Taking some of the load out of code reviews"
 date:   	2016-10-13 08:55:00
 categories: github github-enterprise jenkins pull-request
-comments: true
+comments: false
 page-type: article
 ---
 

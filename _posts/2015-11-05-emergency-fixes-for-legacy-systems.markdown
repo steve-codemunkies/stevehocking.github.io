@@ -4,7 +4,7 @@ title:  	"Dealing with emergency fixes on poorly understood legacy systems"
 description:  "If these things were easy everyone would be doing it"
 date:   	2015-11-05 19:30:00
 categories: legacy maintenance
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg
 tile-image: /assets/2015-11-05-legacy-tile.jpg

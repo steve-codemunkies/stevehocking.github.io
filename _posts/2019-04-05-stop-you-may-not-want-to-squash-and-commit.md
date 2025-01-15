@@ -4,7 +4,7 @@ title:  	"Stop! You may not want to squash and commit..."
 description:  "Yes it gets rid of cruft, but so does rebase"
 date:   	2019-04-05 22:00:00+01:00
 categories: git hg mercurial
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
 tile-image: /assets/2019-01-07-elite-hacking-tile.jpg

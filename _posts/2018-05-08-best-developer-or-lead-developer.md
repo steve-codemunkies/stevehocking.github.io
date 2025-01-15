@@ -4,7 +4,7 @@ title:  	"Are you the best developer, or the lead developer?"
 description:  "There is a difference, but not everyone realises it."
 date:   	2018-05-08 23:15:00
 categories: team leadership
-comments: true
+comments: false
 page-type: article
 ---
 

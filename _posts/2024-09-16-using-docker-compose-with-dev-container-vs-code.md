@@ -4,7 +4,7 @@ title:  	"Using Docker Compose with a Dev Container in VS Code"
 description:  "Docker can run more than one container at a time? 🤯"
 date:   	2024-09-16 14:45:00
 categories: docker docker-compose vscode plantuml
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg
 tile-image: /assets/2018-12-12-container-ship-tile.jpg

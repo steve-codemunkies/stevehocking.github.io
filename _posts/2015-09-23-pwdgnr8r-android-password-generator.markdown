@@ -4,7 +4,7 @@ title:  	"PwdGnr8r: Android password generation app - Preferences"
 description:  "Expressing an Android Preference"
 date:   	2015-09-23 12:30:00
 categories: android pwdgnr8r preferences app
-comments: true
+comments: false
 page-type: article
 hero-image: /assets/2015-09-23-dev-workspace.jpg
 ---
