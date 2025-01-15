@@ -10,9 +10,9 @@
 	],
 
 	// Add aws cli as a feature
-	"features": {
-		"ghcr.io/devcontainers/features/aws-cli:1": {}
-	},
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/aws-cli:1": {}
+	// },
 	// Mount the local aws directory to reuse pre-configured credentials
 	// See https://cloudbytes.dev/snippets/mount-aws-credentials-on-vscode-devcontainers
 	"mounts": [
