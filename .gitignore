@@ -10,3 +10,4 @@ cdk-demo
 script
 
 plantuml-output
+node_modules
