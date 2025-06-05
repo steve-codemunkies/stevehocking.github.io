@@ -545,3 +545,43 @@ li img {
   float: right;
   margin-left: 10px;
 }
+
+/*table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+}*/
+
+table {
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+th, td {
+  padding-left: 0px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+thead tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+thead tr {
+  border-bottom: 2px solid black;
+}
+
+tbody tr {
+  border-bottom: 1px solid black;
+}
